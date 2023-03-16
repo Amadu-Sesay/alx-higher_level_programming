@@ -1,8 +1,9 @@
 #!/usr/bin/python3
-# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*
+
+
 """
-Created on Tue May 19 14:21:54 2020
-@author: Robinson Montes
+@author: Alhaji Sesay
 """
 
 
@@ -18,4 +19,3 @@ class Square:
             size: (:obj: 'int'): A private instance size
         """
         self.__size = size
-
