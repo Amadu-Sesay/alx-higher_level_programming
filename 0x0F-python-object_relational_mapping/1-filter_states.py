@@ -12,16 +12,16 @@ if __name__ == "__main__":
                          port=3306)
     """In order to put our new connnection to good use we
      need to create a cursor object"""
-    cur = db.cursor()
+    cursor = db.cursor()
     """The execute function requires one parameter, the query."""
-    cur.execute("SELECT * FROM states\
+    cursor.execute("SELECT * FROM states\
         WHERE name REGEXP BINARY '^N'\
             ORDER BY id ASC")
     """Obtaining Query Results"""
-    rows = cur.fetchall()
+    rows = cursor.fetchall()
     for row in rows:
         print(row)
     """ Close all cursors"""
-    cur.close()
+    cursor.close()
     """Close all databases"""
     db.close()
